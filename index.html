@@ -1,12 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>KIMAYE</title>
+   <style>
+      * {
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+      }
+
+      #navbar1 {
+         background-color: green;
+         box-shadow: rgba(99, 99, 99, 0.4) 0px 3px 9px 0px;
+         height: 50px;
+         align-items: center;
+         text-align: center;
+         color: white;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+      }
+
+
+
+      .navbar2 {
+         background-color: rgb(233, 229, 223);
+         box-shadow: rgba(99, 99, 99, 0.4) 0px 3px 9px 0px;
+         height: 70px;
+         display: flex;
+         text-align: center;
+         gap: 3%;
+
+      }
+
+      #logo img {
+         width: 60%;
+         height: 70%;
+         margin-left: 300%;
+      }
+
+      span {
+         color: yellow
+      }
+
+      #logo>div {
+         justify-content: space-between;
+      }
+
+      nav ul {
+         padding: 0;
+         margin: 0;
+         float: right;
+         margin-right: 30px;
+      }
+
+      nav ul li {
+         background-color: rgb(233, 229, 223);
+         position: relative;
+         list-style: none;
+         display: inline-block;
+      }
+
+      nav ul li a {
+         display: block;
+         padding: 0 15px;
+         color: black;
+         text-decoration: none;
+         line-height: 60px;
+         font-size: 20px;
+      }
+
+      nav ul li a:hover {
+         background: rgb(151, 217, 151)
+      }
+
+      nav ul ul {
+         position: absolute;
+         top: 60px;
+         display: none;
+      }
+
+      nav ul li:hover>ul {
+         display: block;
+      }
+
+      nav ul ul li {
+         width: 150px;
+         float: none;
+         display: list-item;
+         position: relative;
+      }
+      #product_pages{
+    width: 100%;
+    /* border: 1px solid black; */
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding:  1% 1% 1% 0% ;
+    color: gray;
+    justify-content: space-around;
+    cursor: pointer;
+    gap:30px;
+}
+
+ .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 10%;
+  }
+  
+ .dropdown > .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100%;
+    line-height: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown-content>p{
+    margin-top: 25%;
+    font-size: 13px;
+}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+.dropbtn:hover{
+    text-shadow: 0px 1px rgb(114, 114, 114);
+}
+#head{
+   background-color: rgb(195, 242, 206);
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+    padding:  1% 1% 1% 0% ;
+
+}
+ img{
+   width:50%;
+   height:50%
+}
+   </style>
 </head>
+
 <body>
-    <h1>shruti from West Bengal</h1>
+
+   <div id="navbar1">
+      <h4>Delivering in Mumbai, Delhi and Gurugram <span>|</span> Same day delivery!</h4>
+   </div>
+<header id="head">
+   <nav id="nav">
+      <div id="product_pages">
+
+       <div class="dropdown">
+           <div class="dropbtn"  onclick="makeupp()">MAKEUP</div>
+           <div class="dropdown-content">
+             <p>LIPS</p>
+             <p>FACE</p>
+             <p>EYES</p>
+           </div>
+         </div>
+         <div class="dropdown">
+           <div class="dropbtn" onclick="brushpage()">BRUSHES</div>
+           <div class="dropdown-content">
+             <p>FACE BRUSHIES</p>
+             <p>EYES BRUSHIES</p>
+           </div>
+         </div>
+         <div class="dropdown">
+           <div class="dropbtn">SKINCARE</div>
+           <div class="dropdown-content">
+             <p>MOISTURIZER</p>
+             <p>MASKS</p>
+             <p>SETTING MISTS</p>
+             <p>SHEET MASK COMBO</p>
+             <p>COFFEE CULTURE RANGE</p>
+           </div>
+      </div>
+   </nav>
+   <div>
+   </div>
+<div>
+   <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" alt="">
+</div>
+
+</header>
+
+
+     
+
+
+
 </body>
+
 </html>
