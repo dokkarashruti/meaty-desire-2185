@@ -6,6 +6,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>KIMAYE</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
    <style>
       * {
          margin: 0px;
@@ -94,59 +97,137 @@
          display: list-item;
          position: relative;
       }
-      #product_pages{
-    width: 100%;
-    /* border: 1px solid black; */
-    font-size: 13px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    padding:  1% 1% 1% 0% ;
-    color: gray;
-    justify-content: space-around;
-    cursor: pointer;
-    gap:30px;
-}
 
- .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 10%;
-  }
-  
- .dropdown > .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100%;
-    line-height: 25px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-  }
-  .dropdown-content>p{
-    margin-top: 25%;
-    font-size: 13px;
-}
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-.dropbtn:hover{
-    text-shadow: 0px 1px rgb(114, 114, 114);
-}
-#head{
-   background-color: rgb(195, 242, 206);
-   display:flex;
-   justify-content: space-around;
-   align-items: center;
-    padding:  1% 1% 1% 0% ;
+      #product_pages {
+         width: 100%;
+         /* border: 1px solid black; */
+         font-size: 13px;
+         font-family: 'Poppins', sans-serif;
+         font-weight: 700;
+         display: flex;
+         align-items: center;
+         padding: 1% 1% 1% 0%;
+         color: gray;
+         justify-content: space-around;
+         cursor: pointer;
+         gap: 30px;
+      }
 
-}
- img{
-   width:50%;
-   height:50%
-}
+      .dropdown {
+         position: relative;
+         display: inline-block;
+         width: 10%;
+      }
+
+      .dropdown>.dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         min-width: 100%;
+         line-height: 25px;
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+         padding: 12px 16px;
+         z-index: 1;
+      }
+
+      .dropdown-content>p {
+         margin-top: 25%;
+         font-size: 13px;
+      }
+
+      .dropdown:hover .dropdown-content {
+         display: block;
+      }
+
+      .dropbtn:hover {
+         text-shadow: 0px 1px rgb(114, 114, 114);
+      }
+
+      #head {
+         background-color: rgb(245, 240, 240);
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         padding: 1% 1% 1% 0%;
+
+      }
+
+      img {
+         width: 50%;
+         height: 50%
+      }
+
+      .location {
+         width: 5%;
+         height: 5%;
+         margin-right: 15%;
+         display: flex;
+         color: rgb(78, 74, 74);
+      }
+
+      a,
+      a:hover {
+         text-decoration: none;
+      }
+
+      .searchBox {
+         position: relative;
+         display: flex;
+         justify-content: center;
+
+      }
+
+      .searchText {
+         width: 0rem;
+         /* padding: 1rem; */
+         border-radius: 5rem;
+         transition: all 0.2s linear;
+      }
+
+      .searchText:focus {
+         outline: none;
+      }
+
+      .searchBtn {
+         width: 5rem;
+         height: 5rem;
+         position: absolute;
+         right: 1rem;
+         display: grid;
+
+      }
+
+      .searchBox:hover>.searchText {
+
+         width: 25rem;
+         padding: 1rem;
+         box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+      }
+
+      .caption1 {
+         text-align: center;
+         margin-top: 1%;
+         background-color: #f5eeee;
+      }
+
+      
+
+      #P1 {
+         width: 40%;
+         height: 40%;
+         margin-top: 5%;
+         margin-left: 1%;
+         text-align: center;
+      }
+
+      #P2 {
+         width: 40%;
+         height: 40%;
+         margin-top: 5%;
+         margin-left: 1%;
+         text-align: center;
+
+      }
    </style>
 </head>
 
@@ -155,48 +236,76 @@
    <div id="navbar1">
       <h4>Delivering in Mumbai, Delhi and Gurugram <span>|</span> Same day delivery!</h4>
    </div>
-<header id="head">
-   <nav id="nav">
-      <div id="product_pages">
+   <header id="head">
+      <nav id="nav">
+         <div id="product_pages">
 
-       <div class="dropdown">
-           <div class="dropbtn"  onclick="makeupp()">MAKEUP</div>
-           <div class="dropdown-content">
-             <p>LIPS</p>
-             <p>FACE</p>
-             <p>EYES</p>
-           </div>
-         </div>
-         <div class="dropdown">
-           <div class="dropbtn" onclick="brushpage()">BRUSHES</div>
-           <div class="dropdown-content">
-             <p>FACE BRUSHIES</p>
-             <p>EYES BRUSHIES</p>
-           </div>
-         </div>
-         <div class="dropdown">
-           <div class="dropbtn">SKINCARE</div>
-           <div class="dropdown-content">
-             <p>MOISTURIZER</p>
-             <p>MASKS</p>
-             <p>SETTING MISTS</p>
-             <p>SHEET MASK COMBO</p>
-             <p>COFFEE CULTURE RANGE</p>
-           </div>
+            <div class="dropdown">
+               <div class="dropbtn" onclick="shop()">SHOP</div>
+               <div class="dropdown-content">
+                  <p>ALL FRUITS</p>
+                  <p>ALL VEGGIES</p>
+                  <p>FRESH CUTS</p>
+                  <P>FRUIT COMBOS</P>
+                  <P>GIFTS BY KIMAYE</P>
+                  <P>FRUITS X SUBSCRIPTION</P>
+                  <P>COMMUNITY BUYING</P>
+               </div>
+            </div>
+            <div class="dropdown">
+               <div class="dropbtn" onclick="learn()">LEARN</div>
+               <div class="dropdown-content">
+                  <p>OUR STORY</p>
+                  <p>WHY KIMAYE</p>
+                  <P>TRACEABILITY</P>
+                  <P>BEYOND FRUITS</P>
+               </div>
+            </div>
+            <div class="dropdown">
+               <div class="GROW" onclick="grow">GROW</div>
+            </div>
+      </nav>
+      <div>
       </div>
-   </nav>
-   <div>
+      <div>
+         <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" alt="">
+      </div>
+      <div class="location">
+         <img src="https://cdn.icon-icons.com/icons2/2642/PNG/512/google_map_location_logo_icon_159350.png" alt="">
+         <h5>Mumbai</h5>
+      </div>
+
+      <div class="searchBox">
+
+         <input type="text" class="searchText" placeholder="search for Product">
+         <a href="#" class="searchBtn">
+            <i class="fas fa-search"></i>
+         </a>
+      </div>
+   </header>
+
+
+   <div class="caption1">
+      <h1>KIMAYE RECOMMENDS</h1>
+      <h2>A Handpicked and Curated Fruit offering</h2>
    </div>
-<div>
-   <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" alt="">
+<div class="container">
+   <div id="P1">
+      <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-1-min_303x.png?v=1614338437"
+         alt="">
+      <h1>ALL FRUITS</h1>
+      <P>Pick and choose from a wide range of delicious friuts</P>
+      <button>Shop Now</button>
+   </div>
+
+   <div id="P2">
+      <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/category-inage_303x.jpg?v=1659083246"
+         alt="">
+      <h1>ALL VEGGIES</h1>
+      <P>A handpicked and curated offering</P>
+      <button>Shop Now</button>
+   </div>
 </div>
-
-</header>
-
-
-     
-
-
 
 </body>
 
