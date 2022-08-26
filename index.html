@@ -9,6 +9,12 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
       integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link rel="stylesheet" href="style.css">
+      <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+
    <style>
       * {
          margin: 0px;
@@ -26,6 +32,7 @@
          display: flex;
          justify-content: center;
          flex-direction: column;
+         position: relative;
       }
 
 
@@ -144,11 +151,14 @@
       }
 
       #head {
+         width: 100%;
          background-color: rgb(245, 240, 240);
          display: flex;
          justify-content: space-around;
          align-items: center;
          padding: 1% 1% 1% 0%;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         position: fixed;
 
       }
 
@@ -209,8 +219,13 @@
          margin-top: 1%;
          background-color: #f5eeee;
       }
+      body{
+         background-color: #eeeee9;
+       
 
-      
+      }
+
+
 
       #P1 {
          width: 40%;
@@ -228,6 +243,158 @@
          text-align: center;
 
       }
+      #P3 {
+         width: 40%;
+         height: 40%;
+         margin-top: 5%;
+         margin-left: 1%;
+         text-align: center;
+
+      }
+      #P4 {
+         width: 40%;
+         height: 40%;
+         margin-top: 5%;
+         margin-left: 1%;
+         text-align: center;
+
+      }
+      #P5 {
+         width: 40%;
+         height: 40%;
+         margin-top: 5%;
+         margin-left: 1%;
+         text-align: center;
+
+      }
+
+      .container{
+         width: 80%;
+         /* border: 1px solid red; */
+         display: flex;
+         margin: auto;
+         position: relative;
+         top:50px;
+         
+
+      }
+      .container>div{
+         width:20%;
+         /* border: 1px solid black; */
+         /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+         background-color:#dcdcd8;
+         padding-top: 25px;
+         padding-bottom: 30px;
+         border-radius: 20px;
+      }
+      .combos{
+         width: 60%;
+         /* border: 1px solid red; */
+         display: flex;
+         margin: auto;
+         position: relative;
+         top:50px;
+         
+
+      }
+      .combos>div{
+         width:20%;
+         /* border: 1px solid black; */
+         /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+         background-color:#dcdcd8;
+         padding-top: 25px;
+         padding-bottom: 30px;
+         border-radius: 20px;
+      }
+      
+      .ph{
+         border-radius: 20px;
+         width: 90%;
+      }
+      .ph:hover{
+         width:500px;
+      }
+      .shop{
+         background-color: red;
+         padding:10px 30px;
+         color: white;
+         border-radius: 20px;
+         font-size: 15px;
+         border: 0px;
+         position: relative;
+         top:15px;
+      }
+      .shop:hover{
+         background-color: rgb(238, 114, 114);
+      }
+      .fruit{
+         width: 100%;
+         height: 800px;
+         margin-top: 10%;
+         margin-left: 1%;
+         text-align: center;
+         background-color: #6d9047;
+         display: flex;
+         
+      }
+      .fruit>div{
+         width: 50%;
+         height: 700px;
+         /* border: 1px solid black; */
+      }
+      #fpic>img{
+         width: 60%;
+         height: 700px;
+         position: relative;
+         left: 50px;
+         top: 30px;
+      }
+      #pag{
+         /* border:1px solid black; */
+      }
+      .pag1{
+        margin-top: 10%;
+        
+      }
+      #k{
+         margin-top: 10%;
+         background-color: #eeeee9;
+         width: 50%;
+         height: 50px;
+         margin-left: 20%;
+      }
+      #button{
+        margin-top: 10%;
+        margin-right: 50%;
+        background-color: white;
+         padding:10px 30px;
+         color: black;
+         border-radius: 20px;
+         font-size: 15px;
+         border: 0px;
+         position: relative;
+         top:15px;
+      }
+      .food1{
+         margin-top: 5%;
+         margin-right: 10%;
+      }
+      .food2{
+         margin-top: 5%;
+         margin-right: 10%;
+      }
+      .food3{
+         margin-top: 5%;
+         margin-right: 10%;
+      }
+      
+
+
+
+
+      
+
+    
    </style>
 </head>
 
@@ -291,22 +458,165 @@
    </div>
 <div class="container">
    <div id="P1">
-      <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-1-min_303x.png?v=1614338437"
+      <img class="ph" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-1-min_303x.png?v=1614338437"
          alt="">
       <h1>ALL FRUITS</h1>
-      <P>Pick and choose from a wide range of delicious friuts</P>
-      <button>Shop Now</button>
+      <P >Pick and choose from a wide range of delicious friuts</P>
+      <button class="shop">Shop Now</button>
    </div>
 
    <div id="P2">
-      <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/category-inage_303x.jpg?v=1659083246"
+      <img class="ph" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/category-inage_303x.jpg?v=1659083246"
          alt="">
       <h1>ALL VEGGIES</h1>
       <P>A handpicked and curated offering</P>
-      <button>Shop Now</button>
+      <button class="shop">Shop Now</button>
+   </div>
+
+    
+   <div id="P3">
+      <img class="ph" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-3-min_377x.png?v=1614338730"
+         alt="">
+      <h1>FRESH CUTS</h1>
+      <P>We want to spoon-feed you quite literally</P>
+      <button class="shop">Shop Now</button>
    </div>
 </div>
+    <div class="combos">
+      <div id="P4">
+         <img class="ph" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-2-min_377x.jpg?v=1614339080"
+            alt="">
+         <h1>FRUIT COMBOS</h1>
+         <P>Indulge in fruit combinations created by us</P>
+         <button class="shop">Shop Now</button>
+      </div>
 
+      <div id="P5">
+         <img class="ph" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/Untitled_design_1-min_377x.png?v=1631516953"
+            alt="">
+         <h1>FRUIT COMBOS</h1>
+         <P>Indulge in fruit combinations created by us</P>
+         <button class="shop">Shop Now</button>
+      </div>
+    </div>
+
+    <div class="fruit">
+          <div id="fpic">
+               <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/kimahi_570x_2db87855-9260-47c2-a80e-3759af77dbea_570x.png?v=1622009438" alt="">
+          </div>
+          <div id="pag">
+            <div class="pag1">
+              <h1><i>WE'D LIKE TO SAY KIMAHI...</i></h1>
+              <div class="food1">
+              <p>Many of us share common safety concerns about the food we eat.</p>
+  
+            </div>
+  
+            <div class="food2">
+              <p>When it comes to fruits and vegetables, these concerns are even more </p>
+               <p>serious in terms of the way they are grown and handled throughout their </p>
+               <p>farm-to-home journey. We make buying and eating fruits and vegetables </p>
+               <p>a worry-free and enjoyable experience for you.</p>
+
+            </div>
+
+            <div class="food3">
+               <p>Since 2009, we have set the benchmark for fruit safety and quality in 35</p>
+               <p>countries. Kimaye is now expanding its footprint in India, bringing you</p>
+               <p>multiple varieties of fruit and vegetables that are grown, packaged, and</p>
+               <p>delivered in the safest and most socially responsible manner.</p>
+            </div>
+               <div id="k">
+               <h1><i>Kimaye is #allSafe#allGood</i></h1>
+            </div>
+            
+               <button id="button">Know More</button>
+            
+            </div>
+          </div>
+    </div>
+
+
+    <div class="points">
+
+
+      </div>
+      <div class="swiper">
+         <h1 id="secret"><i>THE SECRET'S OUT: WE'RE SUPER SAFE</i></h1>
+         <h2   id="secret1">Witness Our Journey</h2>
+         <!-- Additional required wrapper -->
+         <div class="swiper-wrapper">
+           <!-- Slides -->
+           <div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-1_guetzli-min.jpg?v=1614755149" alt=""></div>
+           <div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-2_guetzli-min.jpg?v=1622009925" alt=""></div>
+           <div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-3_guetzli-min.jpg?v=1614755148" alt=""></div>
+           <div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-4_guetzli-min.jpg?v=1622009925" alt=""></div>
+           <div class="swiper-slide"><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/secret-5_guetzli-min.jpg?v=1622009925" alt=""></div>
+           ...
+         </div>
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
+       
+         <!-- If we need navigation buttons -->
+         <div class="swiper-button-prev"></div>
+         <div class="swiper-button-next"></div>
+       
+         <!-- If we need scrollbar
+         <div class="swiper-scrollbar"></div> -->
+       </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+  // Optional parameters
+//   direction: 'vertical',
+
+     autoplay:{
+          delay: 3000,
+          disableOnInteraction: false,
+     },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+//   scrollbar: {
+//     el: '.swiper-scrollbar',
+//   },
+});
+    </script>
+<div class="tittle">
+<h1><i>PSST… LOOKING'FOR US?</i></h1>
+<h2>We are here</h2>
+</div>
+
+    <div id="psst">
+          <div class="oranges">
+             <img src="https://scontent.cdninstagram.com/v/t51.2885-15/300825915_783413876136946_6686232156795906957_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=pcBK-dGd8z8AX9zgZY5&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8Byr0KZiLaXJgrZgEQg2zFenYXi4PG_yXykYRIQLqiFw&oe=630E5CFE" alt="">
+          </div>
+          <div class="apple">
+            <img src="https://scontent.cdninstagram.com/v/t51.2885-15/300801874_1123026284951924_5573227094691390540_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=FyQ3uoVk9mAAX8wm3mn&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_BD_tyqkoYsljmfipXrf3nP54b1DYnQkyOtNwRqssStA&oe=630E201E" alt="">
+          </div>
+          <!-- <div class="leves">
+            <img src="" alt="">
+          </div>
+          <div class="barrys">
+            <img src="" alt="">
+          </div> -->
+
+    </div>
 </body>
 
 </html>
