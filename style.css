@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .points{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(240, 235, 226);
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.swiper{
+    width: 100%;
+    height: fit-content;
+    /* margin-left: 20%; */
+}
+.swiper-slide>img{
+    width: 50%;
+    background-color: rgb(240, 235, 226);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top:100px;
+    left: 350px;
+}
+#secret{
+    margin-top: 8%;
+    position: relative;
+    left: 400px;
+ }
+ #secret1{
+    text-align: center;
+    position: relative;
+    right: 15px;
+ }
+ #psst{
+    background-color:rgb(223, 223, 206);
+    width: 100%;
+    height: 500px;
+    margin-top: 5%;
+    text-align: center;
+ }
+ .tittle{
+    margin-top: 10%;
+    text-align: center;
+ }
+ #psst{
+     border: 1px solid black; 
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+         background-color:#dcdcd8;
+         padding-top: 25px;
+         padding-bottom: 30px;
+         border-radius: 20px;
+ }
+ .oranges{
+    width: 40%;
+    height: 150%;
+    margin-top: 5%;
+    margin-left: 1%;
+
+ }
+ .apple{
+    display: flex;
+    width: 40%;
+    height: 150%;
+    margin-top: 5%;
+    margin-left: 1%;
+    
+ }
