@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css" />
+  <script src="https://kit.fontawesome.com/fb700f3d70.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <button id="login">Login</button>
+  <div id="sidelogin">
+    <div id="signin">
+      <div class="top">
+        <div class="topsign">
+          <h2>SIGN IN</h2>
+          <button onclick="cls()">
+            CLOSE <span id="nohover">—</span> <span id="onhover">X</span>
+          </button>
+        </div>
+      </div>
+      <div id="logininput">
+        <label for="">Email address <span>*</span></label>
+        <input type="email" id="mail" />
+        <label for="">Password <span>*</span></label>
+        <input type="password" id="password">
+        <a href="">Forgot your password?</a>
+        <button>LOGIN</button>
+      </div>
+      <div class="fullbtn" id="facebook">
+        <div>
+          <p>Sign in with Facebook</p>
+          <i class="fa-brands fa-facebook-f"></i></i>
+        </div>
+      </div>
+      <div class="fullbtn" id="google">
+        <div>
+          <p>Sign in with Google</p>
+          <i class="fa-brands fa-google"></i>
+        </div>
+      </div>
+      <div id="noaccount">
+        <i class="fa-regular fa-user"></i>
+        <h4>No account yet?</h4>
+        <p>Welcome to Kimaye! Help us with a few details to know you better as you take the journey of enjoying our safe
+          and tasty fruits.</p>
+        <button onclick="sgnup()">Create An Account</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

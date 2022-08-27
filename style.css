@@ -31,11 +31,18 @@
     position: relative;
     left: 400px;
  }
+ #secret:hover{
+    color: red;
+ }
  #secret1{
     text-align: center;
     position: relative;
     right: 15px;
  }
+ #secret1:hover{
+    color: red;
+ }
+
  #psst{
     background-color:rgb(223, 223, 206);
     width: 100%;
@@ -47,26 +54,89 @@
     margin-top: 10%;
     text-align: center;
  }
+ .co:hover{
+      color: red;
+ }
  #psst{
-     border: 1px solid black; 
+     /* border: 1px solid black;  */
          box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
          background-color:#dcdcd8;
          padding-top: 25px;
          padding-bottom: 30px;
          border-radius: 20px;
+         display: flex;
+         
  }
  .oranges{
     width: 40%;
     height: 150%;
     margin-top: 5%;
     margin-left: 1%;
+   
 
  }
  .apple{
-    display: flex;
+    
     width: 40%;
     height: 150%;
     margin-top: 5%;
     margin-left: 1%;
     
  }
+ .leves{
+    width: 40%;
+    height: 150%;
+    margin-top: 5%;
+    margin-left: 1%;
+ }
+ .barrys{
+    width: 40%;
+    height: 150%;
+    margin-top: 5%;
+    margin-left: 1%;
+ }
+ .or{
+    border-radius: 20px;
+    width: 90%;
+ }
+ .or:hover{
+   width: 80%;
+ }
+ .fotter{
+    background-color: rgb(79, 156, 79);
+    width: 100%;
+    height: 300px;
+    margin-top: 6%;
+ }
+ #details{
+    padding: 6%;
+    margin-left: 5%;
+ }
+ .symbols{
+    /* padding-left: 50%;
+    padding-right: 20%; */
+    position: relative;
+    bottom: 200px;
+    left: 1000px;
+    
+ }
+ .fb{
+    width: 3%;
+    height: 3%;
+ }
+ .insta{
+    width: 3%;
+    height: 3%;
+ }
+ .twiter{
+    width: 3%;
+    height: 3%;
+ }
+ .follow{
+    margin-top: 5%;
+ }
+ .s1{
+    width: 10%;
+    height: 10%;
+ }
+ 
