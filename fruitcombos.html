@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+    integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="login.css" />
+ <script src="https://kit.fontawesome.com/fb700f3d70.js" crossorigin="anonymous"></script>
+    <style>
+          
+      * {
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+      }
+
+      #navbar1 {
+         background-color: green;
+         box-shadow: rgba(99, 99, 99, 0.4) 0px 3px 9px 0px;
+         height: 50px;
+         align-items: center;
+         text-align: center;
+         color: white;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+
+      }
+
+
+
+      .navbar2 {
+         background-color: rgb(233, 229, 223);
+         box-shadow: rgba(99, 99, 99, 0.4) 0px 3px 9px 0px;
+         height: 70px;
+         display: flex;
+         text-align: center;
+         gap: 3%;
+
+
+      }
+
+      #logo img {
+         width: 60%;
+         height: 70%;
+         margin-left: 300%;
+      }
+
+      span {
+         color: yellow
+      }
+
+      #logo>div {
+         justify-content: space-between;
+      }
+
+      nav ul {
+         padding: 0;
+         margin: 0;
+         float: right;
+         margin-right: 30px;
+      }
+
+      nav ul li {
+         background-color: rgb(233, 229, 223);
+         position: relative;
+         list-style: none;
+         display: inline-block;
+      }
+
+      nav ul li a {
+         display: block;
+         padding: 0 15px;
+         color: black;
+         text-decoration: none;
+         line-height: 60px;
+         font-size: 20px;
+      }
+
+      nav ul li a:hover {
+         background: rgb(151, 217, 151)
+      }
+
+      nav ul ul {
+         position: absolute;
+         top: 60px;
+         display: none;
+      }
+
+      nav ul li:hover>ul {
+         display: block;
+      }
+
+      nav ul ul li {
+         width: 150px;
+         float: none;
+         display: list-item;
+         position: relative;
+      }
+
+      #product_pages {
+         width: 100%;
+         /* border: 1px solid black; */
+         font-size: 13px;
+         font-family: 'Poppins', sans-serif;
+         font-weight: 700;
+         display: flex;
+         align-items: center;
+         padding: 1% 1% 1% 0%;
+         color: gray;
+         justify-content: space-around;
+         cursor: pointer;
+         gap: 30px;
+      }
+
+      .dropdown {
+         position: relative;
+         display: inline-block;
+         width: 10%;
+      }
+
+      .dropdown>.dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         min-width: 100%;
+         line-height: 25px;
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+         padding: 12px 16px;
+         z-index: 1;
+      }
+
+      .dropdown-content>p {
+         margin-top: 25%;
+         font-size: 13px;
+      }
+
+      .dropdown:hover .dropdown-content {
+         display: block;
+      }
+
+      .dropbtn:hover {
+         text-shadow: 0px 1px rgb(114, 114, 114);
+      }
+
+      #head {
+         width: 100%;
+         background-color: rgb(245, 240, 240);
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         padding: 1% 1% 1% 0%;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         position: sticky;
+         z-index: 999;
+         top: 0%;
+
+      }
+
+      img {
+         width: 50%;
+         height: 50%
+      }
+
+      .location {
+         width: 5%;
+         height: 5%;
+         margin-right: 15%;
+         display: flex;
+         color: rgb(78, 74, 74);
+      }
+
+      a,
+      a:hover {
+         text-decoration: none;
+      }
+
+      .searchBox {
+         position: relative;
+         display: flex;
+         justify-content: center;
+
+      }
+
+      .searchText {
+         width: 0rem;
+         /* padding: 1rem; */
+         border-radius: 5rem;
+         transition: all 0.2s linear;
+      }
+
+      .searchText:focus {
+         outline: none;
+      }
+
+      .searchBtn {
+         width: 5rem;
+         height: 5rem;
+         position: absolute;
+         right: 1rem;
+         display: grid;
+
+      }
+
+      .searchBox:hover>.searchText {
+
+         width: 25rem;
+         padding: 1rem;
+         box-shadow: 0 2rem 2rem -1.5rem rgba(0, 0, 0, 0.5);
+      }
+      .section{
+        
+        display: flex;
+        text-align: center;
+        justify-content: center;
+       gap: 5%;
+       margin-top: 5%;
+      }
+      body {
+         /* background-color: #eeeee9; */
+
+
+      }
+      .containernextpage{
+        display: flex;
+        width: 80%;
+        height: 100%;
+        justify-content: space-between;
+         /* border: 1px solid red; */
+         margin: auto;
+         position: relative;
+         top: 50px;
+      }
+      .containernextpage>div{
+        width: 20%;
+        height: 40%;
+         /* border: 1px solid black;
+         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+         background-color: #dcdcd8; */
+         padding-top: 25px;
+         padding-bottom: 30px;
+         border-radius: 20px;
+      }
+
+      .pf1{
+        width: 80%;
+        height: 80%;
+        margin-top: 8%;
+        margin-left: 6%;
+        border-radius: 20%;
+      }
+
+      .pf1:hover{
+          width: 30%;
+      }
+       #f1{
+        margin-top: 2%;
+        margin-left: 6%;
+
+       }
+       .rs{
+       margin-left: 10%;
+       margin-top: 1%;
+       font-size: large;
+       }
+    </style>
+</head>
+<body>
+    <div id="navbar1">
+        <h4>Delivering in Mumbai, Delhi and Gurugram <span>|</span> Same day delivery!</h4>
+     </div>
+     <div id="sidelogin"></div>
+     <header id="head">
+        <nav id="nav">
+           <div id="product_pages">
+  
+              <div class="dropdown">
+                 <div class="dropbtn" onclick="shop()">SHOP</div>
+                 <div class="dropdown-content">
+                    <p>ALL FRUITS</p>
+                    <p>ALL VEGGIES</p>
+                    <p>FRESH CUTS</p>
+                    <P>FRUIT COMBOS</P>
+                    <P>GIFTS BY KIMAYE</P>
+                    <P>FRUITS X SUBSCRIPTION</P>
+                    <P>COMMUNITY BUYING</P>
+                 </div>
+              </div>
+              <div class="dropdown">
+                 <div class="dropbtn" onclick="learn()">LEARN</div>
+                 <div class="dropdown-content">
+                    <p>OUR STORY</p>
+                    <p>WHY KIMAYE</p>
+                    <P>TRACEABILITY</P>
+                    <P>BEYOND FRUITS</P>
+                 </div>
+              </div>
+              <div class="dropdown">
+                 <div class="GROW" onclick="grow">GROW</div>
+              </div>
+        </nav>
+        <div>
+        </div>
+        <div>
+           <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" alt="">
+        </div>
+        <div class="location">
+           <img src="https://cdn.icon-icons.com/icons2/2642/PNG/512/google_map_location_logo_icon_159350.png" alt="">
+           <h5>Mumbai</h5>
+        </div>
+  
+        <div class="searchBox">
+  
+           <input type="text" class="searchText" placeholder="search for Product">
+           <a href="#" class="searchBtn">
+              <i class="fas fa-search"></i>
+  
+           </a>
+  
+        </div>
+        <button id="login"><i class="fa-regular fa-user"></i></button>
+  
+     </header>
+
+     <div class="section">
+            <div>
+                <p><a href="shop.html">ALL FRUITS</a></p>
+            </div>
+            <div>
+                <p><a href="allvaggies.html">ALL VAGGIES</a></p>
+            </div>
+            <div>
+                <p><a href="freashcuts.html">FREASH CUTS</a></p>
+            </div>
+            <div>
+                <p><a href="fruitcombos.html">FRUITS COMBOS</a></p>
+            </div>
+            <div>
+                <p><a href="gift.html">GIFTS BY KIMAYE</a></p>
+            </div>
+     </div>
+
+
+     <div>
+        <div class="containernextpage">
+            <div>
+               <img class="pf1"
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Cherry--_-blueberry_360x.jpg?v=1654851019"
+                  alt="">
+                  <div id="f1" >
+                        <p>Kimaye cherries (USA Northwest)(Pack of 125gm)</p>
+                        <p class="rs">$369</p>
+                  </div>
+
+            </div>
+                
+<div>
+                  <img class="pf1"
+                  src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Wholesome-combo_360x.jpg?v=1618497683"
+                  alt="">
+                  <div id="f1">
+                        <p>Kimaye cherries (USA Northwest)(Pack of 125gm)</p>
+                        <p class="rs">$369</p>
+                  </div>
+
+                  </div>
+
+
+                  <div>
+                    <img class="pf1"
+                    src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/KiwiBlueberry_360x.png?v=1617983685"
+                    alt="">
+                    <div id="f1">
+                          <p>Kimaye cherries (USA Northwest)(Pack of 125gm)</p>
+                          <p class="rs">$369</p>
+                    </div>
+  
+                    </div>
+
+            </div>      
+
+    
+</body>
+</html>
