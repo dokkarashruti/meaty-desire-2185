@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="login.css" />
   <script src="https://kit.fontawesome.com/fb700f3d70.js" crossorigin="anonymous"></script>
 </head>
-
+<style>
+html{scroll-behavior: smooth;}
+</style>
 <body>
   <button id="login">Login</button>
   <div id="sidelogin">
@@ -28,7 +30,7 @@
         <label for="">Password <span>*</span></label>
         <input type="password" id="password">
         <a href="">Forgot your password?</a>
-        <button>LOGIN</button>
+        <button onclick="login()">LOGIN</button>
       </div>
       <div class="fullbtn" id="facebook">
         <div>
