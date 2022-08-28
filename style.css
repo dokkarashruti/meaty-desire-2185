@@ -1,7 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* .points{
     width: 100%;
@@ -12,131 +12,127 @@
     align-items: center;
     justify-content: center;
 } */
-.swiper{
-    width: 100%;
-    height: fit-content;
-    /* margin-left: 20%; */
+.swiper {
+  width: 100%;
+  height: fit-content;
+  /* margin-left: 20%; */
 }
-.swiper-slide>img{
-    width: 50%;
-    background-color: rgb(240, 235, 226);
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top:100px;
-    left: 350px;
+.swiper-slide > img {
+  width: 50%;
+  background-color: rgb(240, 235, 226);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  left: 350px;
 }
-#secret{
-    margin-top: 8%;
-    position: relative;
-    left: 400px;
- }
- #secret:hover{
-    color: red;
- }
- #secret1{
-    text-align: center;
-    position: relative;
-    right: 15px;
- }
- #secret1:hover{
-    color: red;
- }
+#secret {
+  margin-top: 8%;
+  position: relative;
+  left: 400px;
+}
+#secret:hover {
+  color: red;
+}
+#secret1 {
+  text-align: center;
+  position: relative;
+  right: 15px;
+}
+#secret1:hover {
+  color: red;
+}
 
- #psst{
-    background-color:rgb(223, 223, 206);
-    width: 100%;
-    height: 500px;
-    margin-top: 5%;
-    text-align: center;
- }
- .tittle{
-    margin-top: 10%;
-    text-align: center;
- }
- .co:hover{
-      color: red;
- }
- #psst{
-     /* border: 1px solid black;  */
-         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-         background-color:#dcdcd8;
-         padding-top: 25px;
-         padding-bottom: 30px;
-         border-radius: 20px;
-         display: flex;
-         
- }
- .oranges{
-    width: 40%;
-    height: 150%;
-    margin-top: 5%;
-    margin-left: 1%;
-   
-
- }
- .apple{
-    
-    width: 40%;
-    height: 150%;
-    margin-top: 5%;
-    margin-left: 1%;
-    
- }
- .leves{
-    width: 40%;
-    height: 150%;
-    margin-top: 5%;
-    margin-left: 1%;
- }
- .barrys{
-    width: 40%;
-    height: 150%;
-    margin-top: 5%;
-    margin-left: 1%;
- }
- .or{
-    border-radius: 20px;
-    width: 90%;
- }
- .or:hover{
-   width: 80%;
- }
- .fotter{
-    background-color: rgb(79, 156, 79);
-    width: 100%;
-    height: 300px;
-    margin-top: 6%;
- }
- #details{
-    padding: 6%;
-    margin-left: 5%;
- }
- .symbols{
-    /* padding-left: 50%;
-    padding-right: 20%; */
-    position: relative;
-    bottom: 200px;
-    left: 1000px;
-    
- }
- .fb{
-    width: 3%;
-    height: 3%;
- }
- .insta{
-    width: 3%;
-    height: 3%;
- }
- .twiter{
-    width: 3%;
-    height: 3%;
- }
- .follow{
-    margin-top: 5%;
- }
- .s1{
-    width: 10%;
-    height: 10%;
- }
- 
+#psst {
+  background-color: rgb(223, 223, 206);
+  width: 100%;
+  height: 500px;
+  margin-top: 5%;
+  text-align: center;
+}
+.tittle {
+  margin-top: 10%;
+  text-align: center;
+}
+.co:hover {
+  color: red;
+}
+#psst {
+  /* border: 1px solid black;  */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: #dcdcd8;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  display: flex;
+}
+.oranges {
+  width: 40%;
+  height: 150%;
+  margin-top: 5%;
+  margin-left: 1%;
+}
+.apple {
+  width: 40%;
+  height: 150%;
+  margin-top: 5%;
+  margin-left: 1%;
+}
+.leves {
+  width: 40%;
+  height: 150%;
+  margin-top: 5%;
+  margin-left: 1%;
+}
+.barrys {
+  width: 40%;
+  height: 150%;
+  margin-top: 5%;
+  margin-left: 1%;
+}
+.or {
+  border-radius: 20px;
+  width: 90%;
+}
+.or:hover {
+  width: 80%;
+}
+.fotter {
+  background-color: rgb(79, 156, 79);
+  width: 100%;
+  height: 300px;
+  margin-top: 6%;
+}
+#details {
+  padding: 6%;
+  margin-left: 5%;
+}
+.symbols {
+  /* padding-left: 50px; */
+  padding-right: 30px;
+  position: relative;
+  margin-top: -350px;
+  left: 1000px;
+}
+.fb {
+  width: 3%;
+  height: 3%;
+}
+.insta {
+  width: 3%;
+  height: 3%;
+}
+.twiter {
+  width: 3%;
+  height: 3%;
+}
+.follow {
+  margin-top: 5%;
+}
+.s1 {
+  width: 10%;
+  height: 10%;
+  margin-left: 90%;
+  margin-top: 200px;
+  
+}

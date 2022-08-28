@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css" />
+  <script src="https://kit.fontawesome.com/fb700f3d70.js" crossorigin="anonymous"></script>
+</head>
+
+
+<style>
+    * {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+#login {
+  border: none;
+  cursor: pointer;
+}
+#signin {
+  width: 340px;
+  position: absolute;
+  z-index: 1000000;
+  top: 0%;
+  right: 0;
+  border-left: 1px solid grey;
+  border-bottom: 1px solid grey;
+  background-color: #ffff;
+  height: 100vh;
+  overflow-y: scroll;
+}
+#signin::-webkit-scrollbar {
+  width: 2px;
+  background-color: #c23321;
+}
+.top {
+  width: 100%;
+  background-color: black;
+  color: #ffff;
+}
+.topsign {
+  padding: 30px 10px;
+  margin: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.topsign > button {
+  background: transparent;
+  color: #ffff;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+.topsign > button > span {
+  font-weight: bold;
+}
+#onhover {
+  visibility: hidden;
+  width: 0;
+  margin: 0;
+}
+.topsign > button:hover #nohover {
+  visibility: hidden;
+  width: 0%;
+  margin: 0;
+}
+.topsign > button:hover #onhover {
+  visibility: visible;
+}
+#logininput {
+  margin: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#logininput > label {
+  font-size: 16px;
+  color: #3b3b3b;
+}
+#logininput > label > span {
+  color: red;
+}
+
+#logininput > input {
+  padding-left: 5px;
+  font-size: 18px;
+  height: 40px;
+  border: 1px solid grey;
+}
+#logininput > a {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+#logininput > a:hover {
+  color: #98cb4c;
+}
+#logininput > button {
+  height: 40px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+#logininput > button:hover {
+  background-color: black;
+  color: #ffff;
+}
+.fullbtn > div {
+  margin: 10px auto;
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: #ffff;
+  cursor: pointer;
+}
+#facebook {
+  border-color: #2d5073;
+  background-color: #2d5073;
+}
+#facebook:hover {
+  background-color: #3b5998;
+}
+#google {
+  border-color: #c23321;
+  background-color: #c23321;
+}
+#google:hover {
+  background-color: #dd4b39;
+}
+#noaccount {
+  margin: 20px auto;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+#noaccount > i {
+  font-size: 80px;
+}
+#noaccount > button {
+  height: 40px;
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+</style>
+<body>
+  <button id="login">Login</button>
+  <div id="sidelogin">
+    <div id="signin">
+      <div class="top">
+        <div class="topsign">
+          <h2>SIGN IN</h2>
+          <button onclick="cls()">
+            CLOSE <span id="nohover">—</span> <span id="onhover">X</span>
+          </button>
+        </div>
+      </div>
+      <div id="logininput">
+        <label for="">Email address <span>*</span></label>
+        <input type="email" id="mail" />
+        <label for="">Password <span>*</span></label>
+        <input type="password" id="password">
+        <a href="">Forgot your password?</a>
+        <button>LOGIN</button>
+      </div>
+      <div class="fullbtn" id="facebook">
+        <div>
+          <p>Sign in with Facebook</p>
+          <i class="fa-brands fa-facebook-f"></i></i>
+        </div>
+      </div>
+      <div class="fullbtn" id="google">
+        <div>
+          <p>Sign in with Google</p>
+          <i class="fa-brands fa-google"></i>
+        </div>
+      </div>
+      <div id="noaccount">
+        <i class="fa-regular fa-user"></i>
+        <h4>No account yet?</h4>
+        <p>Welcome to Kimaye! Help us with a few details to know you better as you take the journey of enjoying our safe
+          and tasty fruits.</p>
+        <button onclick="sgnup()">Create An Account</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+function sidelogin() {
+    return `<div id="signin">
+    <div class="top">
+      <div class="topsign">
+        <h2>SIGN IN</h2>
+        <button onclick="cls()">
+          CLOSE <span id="nohover">—</span> <span id="onhover">X</span>
+        </button>
+      </div>
+    </div>
+    <div id="logininput">
+      <label for="">Email address <span>*</span></label>
+      <input type="email" id="mail" />
+      <label for="">Password <span>*</span></label>
+      <input type="password" id="password">
+      <a href="">Forgot your password?</a>
+      <button>LOGIN</button>
+    </div>
+    <div class="fullbtn" id="facebook">
+      <div>
+        <p>Sign in with Facebook</p>
+        <i class="fa-brands fa-facebook-f"></i></i>
+      </div>
+    </div>
+    <div class="fullbtn" id="google">
+      <div>
+        <p>Sign in with Google</p>
+        <i class="fa-brands fa-google"></i>
+      </div>
+    </div>
+    <div id="noaccount">
+      <i class="fa-regular fa-user"></i>
+      <h4>No account yet?</h4>
+      <p>Welcome to Kimaye! Help us with a few details to know you better as you take the journey of enjoying our safe and tasty fruits.</p>
+      <button onclick="sgnup()">Create An Account</button>
+    </div>
+  </div>
+  <script>
+    function sidelogin() {
+  return `<div id="signin">
+  <div class="top">
+    <div class="topsign">
+      <h2>SIGN IN</h2>
+      <button onclick="cls()">
+        CLOSE <span id="nohover">—</span> <span id="onhover">X</span>
+      </button>
+    </div>
+  </div>
+  <div id="logininput">
+    <label for="">Email address <span>*</span></label>
+    <input type="email" id="mail" />
+    <label for="">Password <span>*</span></label>
+    <input type="password" id="password">
+    <a href="">Forgot your password?</a>
+    <button>LOGIN</button>
+  </div>
+  <div class="fullbtn" id="facebook">
+    <div>
+      <p>Sign in with Facebook</p>
+      <i class="fa-brands fa-facebook-f"></i></i>
+    </div>
+  </div>
+  <div class="fullbtn" id="google">
+    <div>
+      <p>Sign in with Google</p>
+      <i class="fa-brands fa-google"></i>
+    </div>
+  </div>
+  <div id="noaccount">
+    <i class="fa-regular fa-user"></i>
+    <h4>No account yet?</h4>
+    <p>Welcome to Kimaye! Help us with a few details to know you better as you take the journey of enjoying our safe and tasty fruits.</p>
+    <button onclick="sgnup()">Create An Account</button>
+  </div>
+</div>`;
+}
+function sidesignup(){
+  return ``
+}
+let login = document.getElementById("login");
+let show = document.getElementById("sidelogin");
+login.addEventListener("click", user);
+function user() {
+  show.innerHTML = null;
+  show.innerHTML = sidelogin();
+}
+
+function cls() {
+  show.innerHTML = null;
+}
+
+function sgnup() {
+  show.innerHTML = null;
+  show.innerHTML = sidelogin();
+  
+}
+  </script>
+</html>
